@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="E:\DEVELOPMENT\laravel_src\laravel_src.clpprj">
+	<removed value=";"/><added value=""/><lastopfiles>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Controllers\HomeController.php"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Controllers\Controller.php"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\views\auth\login.blade.php"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\User.php"/>
+	</lastopfiles>
+	<errors version="5.11">
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\webmozart\assert\src\Assert.php">
+			<error val="22;180;23;180;102;1;"/>
+			<error val="22;762;23;762;102;1;"/>
+			<error val="22;973;23;973;102;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\var-dumper\Caster\Caster.php">
+			<error val="32;71;35;71;303;2;"/>
+			<error val="67;74;70;74;303;2;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\process\Tests\ProcessTest.php">
+			<error val="41;773;42;773;901;2;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\debug\DebugClassLoader.php">
+			<error val="34;400;45;400;303;2;"/>
+			<error val="52;401;63;401;303;2;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\console\Application.php">
+			<error val="83;753;89;753;303;2;"/>
+			<error val="72;754;78;754;303;2;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\swiftmailer\swiftmailer\tests\unit\Swift\ByteStream\ArrayByteStreamTest.php">
+			<error val="38;58;39;58;901;2;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\sebastian\diff\tests\ParserTest.php">
+			<error val="0;84;1;84;102;1;"/>
+			<error val="0;128;4;128;102;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\phpunit\phpunit\tests\unit\Framework\Constraint\LogicalOrTest.php">
+			<error val="49;181;51;181;204;1;"/>
+			<error val="52;203;54;203;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\phpunit\phpunit\tests\unit\Framework\Constraint\LogicalAndTest.php">
+			<error val="49;188;51;188;204;1;"/>
+			<error val="52;208;54;208;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\phpunit\php-token-stream\tests\_fixture\classUsesNamespacedFunction.php">
+			<error val="3;3;12;3;601;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\test\PhpParser\LexerTest.php">
+			<error val="66;221;67;221;901;2;"/>
+			<error val="66;245;67;245;901;2;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\Builder\Trait_.php">
+			<error val="41;52;42;52;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\Builder\Property.php">
+			<error val="41;102;42;102;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\Builder\Interface_.php">
+			<error val="41;68;42;68;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\Builder\Class_.php">
+			<error val="41;113;42;113;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\ParserAbstract.php">
+			<error val="92;606;93;606;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\JsonDecoder.php">
+			<error val="68;79;70;79;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\BuilderHelpers.php">
+			<error val="69;254;70;254;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\BuilderFactory.php">
+			<error val="46;22;47;22;204;1;"/>
+			<error val="49;33;50;33;204;1;"/>
+			<error val="53;44;54;44;204;1;"/>
+			<error val="19;55;25;55;201;1;"/>
+			<error val="50;66;51;66;204;1;"/>
+			<error val="49;77;50;77;204;1;"/>
+			<error val="52;88;53;88;204;1;"/>
+			<error val="19;99;28;99;201;1;"/>
+			<error val="40;110;41;110;204;1;"/>
+			<error val="60;154;61;154;204;1;"/>
+			<error val="73;170;74;170;204;1;"/>
+			<error val="70;187;71;187;204;1;"/>
+			<error val="56;203;57;203;204;1;"/>
+			<error val="44;217;45;217;204;1;"/>
+			<error val="56;229;57;229;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\myclabs\deep-copy\src\DeepCopy\deep_copy.php">
+			<error val="3;4;12;4;601;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\monolog\monolog\tests\Monolog\Processor\MercurialProcessorTest.php">
+			<error val="11;32;16;32;102;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\mockery\mockery\tests\Mockery\Fixtures\SemiReservedWordsAsMethods.php">
+			<error val="12;8;18;8;201;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\mockery\mockery\tests\Mockery\DummyClasses\DemeterChain.php">
+			<error val="26;25;28;25;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\mockery\mockery\tests\Mockery\MockingParameterAndReturnTypesTest.php">
+			<error val="38;169;40;169;204;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\laravel\framework\src\Illuminate\View\Compilers\Concerns\CompilesJson.php">
+			<error val="43;11;45;11;101;1;"/>
+		</errfile>
+		<errfile name="E:\DEVELOPMENT\laravel_src\vendor\doctrine\instantiator\src\Doctrine\Instantiator\Instantiator.php">
+			<error val="99;149;101;149;204;1;"/>
+		</errfile>
+	</errors>
+	<cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+		<facade class="App" name="app"/>
+		<facade class="Auth" name="auth"/>
+		<facade class="Blade" name="view"/>
+		<facade class="Cache" name="cache"/>
+		<facade class="Config" name="config"/>
+		<facade class="Cookie" name="cookie"/>
+		<facade class="Crypt" name="encrypter"/>
+		<facade class="DB" name="db"/>
+		<facade class="Event" name="events"/>
+		<facade class="Facade" name="Facade does not implement getFacadeAccessor method."/>
+		<facade class="File" name="files"/>
+		<facade class="Hash" name="hash"/>
+		<facade class="Input" name="request"/>
+		<facade class="Lang" name="translator"/>
+		<facade class="Mail" name="mailer"/>
+		<facade class="Password" name="auth.password"/>
+		<facade class="Queue" name="queue"/>
+		<facade class="Redirect" name="redirect"/>
+		<facade class="Redis" name="redis"/>
+		<facade class="Request" name="request"/>
+		<facade class="Route" name="router"/>
+		<facade class="Schema" name="db"/>
+		<facade class="Session" name="session"/>
+		<facade class="Storage" name="filesystem"/>
+		<facade class="URL" name="url"/>
+		<facade class="Validator" name="validator"/>
+		<facade class="View" name="view"/>
+		<file name="E:\DEVELOPMENT\laravel_src\vendor\laravel\framework\src\Illuminate\Cache\CacheServiceProvider.php">
+			<type name="memcached.connector" class="MemcachedConnector"/>
+		</file>
+		<file name="E:\DEVELOPMENT\laravel_src\vendor\laravel\framework\src\Illuminate\Filesystem\FilesystemServiceProvider.php">
+			<type name="files" class="Filesystem"/>
+		</file>
+		<file name="E:\DEVELOPMENT\laravel_src\vendor\laravel\framework\src\Illuminate\Foundation\Providers\ArtisanServiceProvider.php">
+			<type name="command.auth.make" class="AuthMakeCommand"/>
+			<type name="command.auth.resets.clear" class="ClearResetsCommand"/>
+			<type name="command.clear-compiled" class="ClearCompiledCommand"/>
+			<type name="command.down" class="DownCommand"/>
+			<type name="command.environment" class="EnvironmentCommand"/>
+			<type name="command.event.generate" class="EventGenerateCommand"/>
+			<type name="command.key.generate" class="KeyGenerateCommand"/>
+			<type name="command.migrate.fresh" class="MigrateFreshCommand"/>
+			<type name="command.migrate.refresh" class="MigrateRefreshCommand"/>
+			<type name="command.package.discover" class="PackageDiscoverCommand"/>
+			<type name="command.preset" class="PresetCommand"/>
+			<type name="command.queue.failed" class="ListFailedQueueCommand"/>
+			<type name="command.queue.flush" class="FlushFailedQueueCommand"/>
+			<type name="command.queue.forget" class="ForgetFailedQueueCommand"/>
+			<type name="command.queue.restart" class="QueueRestartCommand"/>
+			<type name="command.queue.retry" class="QueueRetryCommand"/>
+			<type name="command.serve" class="ServeCommand"/>
+			<type name="command.storage.link" class="StorageLinkCommand"/>
+			<type name="command.up" class="UpCommand"/>
+		</file>
+		<file name="E:\DEVELOPMENT\laravel_src\vendor\laravel\framework\src\Illuminate\Hashing\HashServiceProvider.php">
+			<type name="hash" class="BcryptHasher"/>
+		</file>
+		<file name="E:\DEVELOPMENT\laravel_src\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php">
+			<type name="view.engine.resolver" class="EngineResolver"/>
+		</file>
+		<file name="E:\DEVELOPMENT\laravel_src\vendor\laravel\tinker\src\TinkerServiceProvider.php">
+			<type name="command.tinker" class="TinkerCommand"/>
+		</file>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\fideloper\proxy\src\TrustProxies.php">
+			<todo name="TODO: Determine if this should only trust the first IP address" pos="9;74"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\filp\whoops\src\Whoops\Exception\Frame.php">
+			<todo name="@todo: This can be made more reliable by checking if we've entered" pos="9;54"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\filp\whoops\src\Whoops\Exception\FrameCollection.php">
+			<todo name="todo   If this gets any more complex than this," pos="8;77"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\filp\whoops\src\Whoops\Exception\Inspector.php">
+			<todo name="todo   Clean this up a bit, cache stuff a bit better." pos="8;103"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\filp\whoops\src\Whoops\Handler\PrettyPageHandler.php">
+			<todo name="@todo: Make this more robust" pos="13;153"/>
+			<todo name="@todo: Asset compiler" pos="13;187"/>
+			<todo name="@todo: Consolidate addDataTable and addDataTableCallback" pos="9;237"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\filp\whoops\src\Whoops\Run.php">
+			<todo name="@todo Might be able to clean this up a bit better" pos="13;293"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\fzaninotto\faker\src\Faker\ORM\CakePHP\EntityPopulator.php">
+			<todo name="TODO check if TreeBehavior attached to modify lft/rgt cols" pos="9;117"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\fzaninotto\faker\src\Faker\Provider\Base.php">
+			<todo name="TODO: remove in v2" pos="9;547"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\fzaninotto\faker\src\Faker\Provider\kk_KZ\Address.php">
+			<todo name="TODO list all country names in the world" pos="5;15"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\fzaninotto\faker\src\Faker\Provider\nb_NO\Person.php">
+			<todo name="todo These number should be random based on birth year" pos="11;297"/>
+			<todo name="todo Calculate modulo 11 of $digits" pos="11;317"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\hamcrest\hamcrest-php\generator\FactoryMethod.php">
+			<todo name="todo Search method in file contents for func_get_args() to replace factoryVarArgs." pos="4;9"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\hamcrest\hamcrest-php\hamcrest\Hamcrest\Arrays\IsArray.php">
+			<todo name="TODO: Allow this to take matchers or values within the array" pos="1;10"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\hamcrest\hamcrest-php\hamcrest\Hamcrest\Core\Set.php">
+			<todo name="todo Replace $property with a matcher and iterate all property names." pos="4;19"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\mockery\mockery\library\Mockery\Generator\MockConfiguration.php">
+			<todo name="TODO workout if this will work" pos="8;119"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\monolog\monolog\src\Monolog\Formatter\JsonFormatter.php">
+			<todo name="TODO 2.0 only check for Throwable" pos="9;174"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\monolog\monolog\src\Monolog\Formatter\LineFormatter.php">
+			<todo name="TODO 2.0 only check for Throwable" pos="9;129"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\monolog\monolog\src\Monolog\Formatter\LogglyFormatter.php">
+			<todo name="TODO 2.0 unset the 'datetime' parameter, retained for BC" pos="13;41"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\monolog\monolog\src\Monolog\Formatter\NormalizerFormatter.php">
+			<todo name="TODO 2.0 only check for Throwable" pos="13;92"/>
+			<todo name="TODO 2.0 only check for Throwable" pos="9;117"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\monolog\monolog\src\Monolog\Handler\AmqpHandler.php">
+			<todo name="TODO 2.0 remove substr call" pos="13;117"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\Internal\TokenStream.php">
+			<todo name="TODO Handle non-space indentation" pos="21;214"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\nikic\php-parser\lib\PhpParser\PrettyPrinterAbstract.php">
+			<todo name="TODO Add &lt;" pos="13;494"/>
+			<todo name="TODO: Try to preserve formatting" pos="17;719"/>
+			<todo name="TODO Handle removal at the start" pos="21;843"/>
+			<todo name="TODO Handle insertion into empty list" pos="13;873"/>
+			<todo name="TODO: &quot;yield&quot; where both key and value are inserted doesn't work" pos="9;1226"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\phpdocumentor\reflection-docblock\src\DocBlock\StandardTagFactory.php">
+			<todo name="TODO: Annotation support is planned for a later stage and as such is disabled for now" pos="13;217"/>
+			<todo name="todo this method should be populated once we implement Annotation notation support." pos="8;305"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\phpunit\phpunit\tests\bootstrap.php">
+			<todo name="TODO: Figure out why (some of) these are required (the classes should be autoloaded instead)" pos="1;10"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\phpunit\phpunit\tests\end-to-end\regression\GitHub\1468\Issue1468Test.php">
+			<todo name="todo Implement this test" pos="8;6"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\phpunit\phpunit\tests\unit\Util\TestTest.php">
+			<todo name="todo Split up in separate tests" pos="8;21"/>
+			<todo name="todo   This test does not really test functionality of \PHPUnit\Util\Test" pos="8;548"/>
+			<todo name="todo Not sure what this test tests (name is misleading at least)" pos="8;718"/>
+			<todo name="todo Remove fixture from test class" pos="8;732"/>
+			<todo name="TODO Remove fixture from test class" pos="9;749"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\CodeCleaner\CalledClassPass.php">
+			<todo name="@todo switch this to actually validate args when we get context-aware code cleaner passes." pos="13;50"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\CodeCleaner\NamespaceAwarePass.php">
+			<todo name="todo should this be final? Extending classes should be sure to either" pos="8;27"/>
+			<todo name="todo should this be final? Extending classes should be sure to either use" pos="8;39"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\CodeCleaner\PassableByReferencePass.php">
+			<todo name="@todo support MethodCall and StaticCall as well." pos="9;37"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\CodeCleaner\RequirePass.php">
+			<todo name="@todo Shell::handleError would be better here, because we could" pos="13;78"/>
+			<todo name="@todo trigger an error as fallback" pos="13;84"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\CodeCleaner\ValidClassNamePass.php">
+			<todo name="@todo add an &quot;else&quot; here which adds a runtime check for instances where we can't tell" pos="13;64"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\CodeCleaner\ValidConstantPass.php">
+			<todo name="todo Detect constants defined in the current code snippet?" pos="4;26"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\CodeCleaner\ValidFunctionNamePass.php">
+			<todo name="@todo add an &quot;else&quot; here which adds a runtime check for instances where we can't tell" pos="13;48"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Command\DocCommand.php">
+			<todo name="@todo this is going to collide with ReflectionMethod ids" pos="17;105"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Command\ListCommand.php">
+			<todo name="@todo something cleaner than this :-/" pos="9;127"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Command\ListCommand\ClassConstantEnumerator.php">
+			<todo name="@todo handle ReflectionExtension as well" pos="13;34"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Command\ListCommand\ClassEnumerator.php">
+			<todo name="@todo make a NamespaceReflector and pass that in for commands like:" pos="9;27"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Command\ListCommand\ConstantEnumerator.php">
+			<todo name="@todo make a NamespaceReflector and pass that in for commands like:" pos="9;27"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Command\ListCommand\FunctionEnumerator.php">
+			<todo name="@todo make a NamespaceReflector and pass that in for commands like:" pos="9;27"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Command\ListCommand\InterfaceEnumerator.php">
+			<todo name="@todo make a NamespaceReflector and pass that in for commands like:" pos="9;36"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Command\ListCommand\TraitEnumerator.php">
+			<todo name="@todo make a NamespaceReflector and pass that in for commands like:" pos="9;36"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Configuration.php">
+			<todo name="@todo mebbe turn this on by default some day" pos="9;606"/>
+			<todo name="@todo detect `chsh` != 65001 on Windows and return false" pos="9;696"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\ExecutionLoopClosure.php">
+			<todo name="todo Once we're on PHP 5.5, we can switch ExecutionClosure to a generator" pos="4;21"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\ExecutionLoop\ProcessForker.php">
+			<todo name="@todo remove this once we don't support PHP 5.x anymore :)" pos="17;212"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\ExecutionLoop\RunkitReloader.php">
+			<todo name="todo Pass in Parser Factory instance for dependency injection?" pos="8;38"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Shell.php">
+			<todo name="todo extract this to somewhere it makes more sense" pos="8;996"/>
+			<todo name="todo Implement self-update" pos="8;1292"/>
+			<todo name="todo Implement prompt to start update" pos="8;1293"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\Sudo\SudoVisitor.php">
+			<todo name="todo handle assigning by reference" pos="4;31"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\src\functions.php">
+			<todo name="@todo come up with a better way of doing this which doesn't involve injecting input :-P" pos="9;86"/>
+			<todo name="@todo Show Presenter / custom casters." pos="9;257"/>
+			<todo name="@todo this triggers the &quot;exited unexpectedly&quot; logic in the" pos="17;349"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\psy\psysh\test\Formatter\SignatureFormatterTest.php">
+			<todo name="@todo show this as `unknown` in red or something" pos="45;81"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\sebastian\environment\tests\ConsoleTest.php">
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;32"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;41"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;50"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;59"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\sebastian\environment\tests\RuntimeTest.php">
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;32"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;41"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;50"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;59"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;68"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;77"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;86"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;95"/>
+			<todo name="todo Now that this component is PHP 7-only and uses return type declarations" pos="8;104"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\sebastian\global-state\src\Snapshot.php">
+			<todo name="todo Implement this properly" pos="8;345"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mime\Headers\ParameterizedHeader.php">
+			<todo name="TODO: Check caching here" pos="36;126"/>
+			<todo name="TODO: text, or something else" pos="13;186"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mime\SimpleMimeEntity.php">
+			<todo name="TODO: Try to refactor this logic" pos="9;299"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Signers\DKIMSigner.php">
+			<todo name="TODO fix return" pos="5;217"/>
+			<todo name="todo handle it but should never happen" pos="25;601"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php">
+			<todo name="@TODO make tls arguments configurable" pos="9;92"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\swiftmailer\swiftmailer\tests\acceptance\Swift\Mime\SimpleMessageAcceptanceTest.php">
+			<todo name="TODO: Test with the charset defined" pos="61;6"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\swiftmailer\swiftmailer\tests\unit\Swift\Signers\OpenDKIMSignerTest.php">
+			<todo name="todo" pos="4;3"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\css-selector\XPath\Extension\FunctionExtension.php">
+			<todo name="todo: handle an+b, odd, even" pos="9;103"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\css-selector\XPath\Extension\HtmlExtension.php">
+			<todo name="todo: in the second half, add &quot;and is not a descendant of that fieldset element's first legend elem" pos="9;111"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\http-foundation\Session\Storage\Handler\PdoSessionHandler.php">
+			<todo name="todo implement missing support for oci DSN (which look totally different from other PDO ones)" pos="8;442"/>
+			<todo name="todo implement missing advisory locks" pos="8;676"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\http-kernel\HttpCache\Store.php">
+			<todo name="TODO the metaStore referenced an entity that doesn't exist in" pos="9;158"/>
+		</todofile>
+		<todofile name="E:\DEVELOPMENT\laravel_src\vendor\symfony\translation\Loader\PoFileLoader.php">
+			<todo name="TODO: this fails when comments or contexts are added" pos="17;89"/>
+		</todofile>
+	</todoblock>
+	<filescache>
+		<file name="E:\DEVELOPMENT\laravel_src\tests\Unit\ExampleTest.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\tests\Feature\ExampleTest.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\tests\TestCase.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\tests\CreatesApplication.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\routes\web.php" crc="1537254122"/>
+		<file name="E:\DEVELOPMENT\laravel_src\routes\console.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\routes\channels.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\routes\api.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\views\layouts\app.blade.php" crc="1537181333"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\views\auth\passwords\reset.blade.php" crc="1537181333"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\views\auth\passwords\email.blade.php" crc="1537181333"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\views\auth\register.blade.php" crc="1537181333"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\views\auth\login.blade.php" crc="1537181333"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\views\welcome.blade.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\views\home.blade.php" crc="1537181333"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\lang\en\validation.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\lang\en\passwords.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\lang\en\pagination.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\lang\en\auth.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\assets\sass\app.scss" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\assets\sass\_variables.scss" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\assets\js\bootstrap.js" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\resources\assets\js\app.js" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\public\js\app.js" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\public\css\app.css" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\public\robots.txt" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\public\index.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\public\.htaccess" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\database\seeds\DatabaseSeeder.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\database\migrations\2014_10_12_100000_create_password_resets_table.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\database\migrations\2014_10_12_000000_create_users_table.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\database\factories\UserFactory.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\view.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\session.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\services.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\queue.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\mail.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\filesystems.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\database.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\cache.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\broadcasting.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\auth.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\config\app.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\bootstrap\app.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Providers\RouteServiceProvider.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Providers\EventServiceProvider.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Providers\BroadcastServiceProvider.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Providers\AuthServiceProvider.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Providers\AppServiceProvider.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Middleware\VerifyCsrfToken.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Middleware\TrustProxies.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Middleware\TrimStrings.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Middleware\RedirectIfAuthenticated.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Middleware\EncryptCookies.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Controllers\Auth\ResetPasswordController.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Controllers\Auth\RegisterController.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Controllers\Auth\LoginController.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Controllers\Auth\ForgotPasswordController.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Controllers\HomeController.php" crc="1537181333"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Controllers\Controller.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Http\Kernel.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Exceptions\Handler.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\Console\Kernel.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\app\User.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\webpack.mix.js" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\server.php" crc="1537180578"/>
+		<file name="E:\DEVELOPMENT\laravel_src\phpunit.xml" crc="1537180578"/>
+	</filescache>
+</project>
