@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Librarys\Debug;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton('debug', function () {
+            return new Debug();
+        });
+        
+        if ($this->app->environment() !== 'production') {
+	        $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
+	    }
     }
 }
