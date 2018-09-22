@@ -4,7 +4,7 @@ namespace App\Librarys;
 
 class Debug
 {
-    public function varDebug(){
+    public function testDebug1111(){
 		echo "111111111111";
 	}
 }
