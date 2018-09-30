@@ -165,6 +165,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -229,6 +230,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         
         'Debug' => App\Librarys\Facades\Debug::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
 

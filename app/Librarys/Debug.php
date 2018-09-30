@@ -2,9 +2,13 @@
 
 namespace App\Librarys;
 
-class Debug
+use App\Librarys\Contracts\Debug as ContractsDebug;
+
+class Debug implements ContractsDebug
 {
     public function testDebug1111(){
-		echo "111111111111";
+
+    	dd(config());
+		//echo \Config::get('define.testclass');
 	}
 }
