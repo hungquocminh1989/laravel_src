@@ -18,13 +18,13 @@
 	</head>
 	<body>
 		<!-- HEADER -->
-	    @include('include.header')
+	    @include('includes.header')
 		
 		<!-- MAIN -->
-		@include('include.main')
+		@include('includes.main')
 		
 		<!-- FOOTER -->
-		@include('include.footer')
+		@include('includes.footer')
 
 	    <!-- Scripts -->
 	    <script src="{{ asset('js/app.js') }}"></script>
