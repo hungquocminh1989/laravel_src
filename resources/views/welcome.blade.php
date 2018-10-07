@@ -65,6 +65,9 @@
         </style>
     </head>
     <body>
+    	<div id="app">
+    		<example-component></example-component>
+    	</div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -76,12 +79,12 @@
                     @endauth
                 </div>
             @endif
-
+		
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+				
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
@@ -91,5 +94,6 @@
                 </div>
             </div>
         </div>
+        <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>

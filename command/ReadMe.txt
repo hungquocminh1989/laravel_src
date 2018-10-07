@@ -33,4 +33,26 @@ $collection=conlection::make([]);
 \Config::get('cache')
 \Config::get('cache.stores')
 
+-----------------------------------------------------------------------------
+VueJS syntax:
+v-bind
+v-on
+v-show (Vẫn có tồn tại trong hmtl chỉ đang set display:none;)
+v-if
+v-else
+v-else-if
+v-for="item in list"
+v-for="(item, index) in list"
+v-for="(list, key, index) in object"
+v-for="i in 10"
+v-for="item in call_function(param)"
+v-model
+v-bind:true-value
+v-bind:false-value
+
+
+
+
+
+
 
