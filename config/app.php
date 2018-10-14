@@ -163,10 +163,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,
-        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -180,6 +176,15 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        
+        /*
+	    |--------------------------------------------------------------------------
+	    | Add new vendor
+	    |--------------------------------------------------------------------------
+	    */
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 
     ],
 
@@ -230,7 +235,18 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         
-        'Debug' => App\Librarys\Facades\Debug::class,
+        /*
+	    |--------------------------------------------------------------------------
+	    | Add new Facades
+	    |--------------------------------------------------------------------------
+	    */
+        'Debug' => App\Libraries\Facades\Debug::class,
+        
+        /*
+	    |--------------------------------------------------------------------------
+	    | Add new vendor
+	    |--------------------------------------------------------------------------
+	    */
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],

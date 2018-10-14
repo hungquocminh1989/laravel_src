@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Librarys\Contracts;
+namespace App\Contracts\Libraries;
 
 interface Debug
 {

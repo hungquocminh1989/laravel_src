@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Librarys;
+namespace App\Libraries;
 
-use App\Librarys\Contracts\Debug as ContractsDebug;
+use App\Contracts\Libraries\Debug as ContractsDebug;
 
 class Debug implements ContractsDebug
 {

@@ -12,6 +12,27 @@ Re-Index Sublime Text
 Delete %userprofile%\.codeintel
 
 -----------------------------------------------------------------------------
+Các Pattern Design :
+- Factory
+Factory ở đây có thể hiểu nôm na là nhà máy. Theo định nghĩa từ Wikipedia, Factory chính là một đối tượng dùng để khởi tạo các đối tượng khác, thường thì factory sẽ là một hàm hay một phương thức trả về các đối tượng của một vài class khác nhau.
+
+- Repository
+Repository đóng vai trò là một lớp kết nối giữa tầng Business và Model của ứng dụng.
+Cấu trúc gồm 4 class chính
+(1) Contracts\Repositories\Repository		(Interface) - Khai báo hàm nền tảng
+(2) Contracts\Repositories\EloquentRepository	(Abstract) implements (1) - Xử lý chi tiết hàm nền tảng	
+(3) Contracts\Repositories\CategoryRepository	(Interface) - Khai báo các hàm custome
+(4) Repositories\CategoryRepository		(Overide) extends (3) implements (2) - Xử lý chi tiết hàm custome
+Chỉ cần Inject class Contracts (Interface) (3) vào tầng Business là sử dụng được, 
+không bị ràng buộc bởi xử lý nền tảng(1-2) và xử lý logic chi tiết (4)
+Có nghĩa là có thể thay đổi xử lý độc lập cho các nhom  (1), (2), (4) mà không ảnh hưởng tầng Business
+
+https://viblo.asia/p/the-repository-design-pattern-AeJ1vONQGkby
+https://techblog.vn/repository-pattern-trong-laravel
+
+- Singleton
+
+-----------------------------------------------------------------------------
 1) Luôn sử dụng Contracts (Interface) trong Facades
 Chú ý phương pháp DEPENDENCY INJECTION
 
