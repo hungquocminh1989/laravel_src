@@ -1,13 +1,18 @@
-﻿https://vnshares.com/laravel-va-nhung-khai-niem-can-biet/
+﻿-----------------------------------------------------------------------------
+Cơ bản Laravel :
+https://vnshares.com/laravel-va-nhung-khai-niem-can-biet/
 https://chungnguyen.xyz/posts/code-laravel-voi-sublime-text-editor
 https://viblo.asia/p/toi-uu-lai-code-laravel-cua-chinh-minh-eW65GwGJ5DO
 https://chungnguyen.xyz/posts/code-laravel-lam-sao-cho-chuan
 
-Add new
+-----------------------------------------------------------------------------
+Một số gói vendor cần thiết :
 composer require barryvdh/laravel-ide-helper
 composer require barryvdh/laravel-debugbar --dev
 composer require rap2hpoutre/laravel-log-viewer
 
+-----------------------------------------------------------------------------
+Setting Sublime Text :
 Re-Index Sublime Text
 Delete %userprofile%\.codeintel
 
@@ -27,12 +32,14 @@ Chỉ cần Inject class Contracts (Interface) (3) vào tầng Business là sử
 không bị ràng buộc bởi xử lý nền tảng(1-2) và xử lý logic chi tiết (4)
 Có nghĩa là có thể thay đổi xử lý độc lập cho các nhom  (1), (2), (4) mà không ảnh hưởng tầng Business
 
+Link tham khảo :
 https://viblo.asia/p/the-repository-design-pattern-AeJ1vONQGkby
 https://techblog.vn/repository-pattern-trong-laravel
 
 - Singleton
 
 -----------------------------------------------------------------------------
+Ghi chú quan trọng :
 1) Luôn sử dụng Contracts (Interface) trong Facades
 Chú ý phương pháp DEPENDENCY INJECTION
 
