@@ -47,11 +47,19 @@ abstract class EloquentRepository implements Repository
 	}
     
     public function insertRow($sql_param){
-		
+    	$classModel = get_class($this->_model);
+    	$row = new $classModel;
+    	foreach($sql_param as $key => $value){
+			$row->{$key} = $value;
+		}
+		return $row->save();
 	}
     
     public function insertRows($sql_params){
-		return $this->_model->create($sql_params);
+		foreach($sql_params as $row){
+			$this->insertRow($row);
+		}
+		return TRUE;
 	}
     
     public function updateRowById($id, $sql_param){
@@ -59,7 +67,7 @@ abstract class EloquentRepository implements Repository
 		foreach($sql_param as $key => $value){
 			$row->{$key} = $value;
 		}
-		$row->save();
+		return $row->save();
 	}
     
     public function updateRowsByConditions($sql_param, $where_param){
@@ -67,7 +75,8 @@ abstract class EloquentRepository implements Repository
 	}
     
     public function deleteRowById($id){
-		
+		$row = $this->_model->find($id);
+		return $row->delete();
 	}
     
     public function deleteRowsByConditions($param){
