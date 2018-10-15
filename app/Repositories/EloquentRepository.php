@@ -35,7 +35,7 @@ abstract class EloquentRepository implements Repository
     }
     
     public function selectRowById($id){
-		
+		return $this->_model->find($id);
 	}
 	
     public function selectAllRows(){
@@ -51,11 +51,15 @@ abstract class EloquentRepository implements Repository
 	}
     
     public function insertRows($sql_params){
-		
+		return $this->_model->create($sql_params);
 	}
     
-    public function updateRowById($sql_param, $id){
-		
+    public function updateRowById($id, $sql_param){
+		$row = $this->_model->find($id);
+		foreach($sql_param as $key => $value){
+			$row->{$key} = $value;
+		}
+		$row->save();
 	}
     
     public function updateRowsByConditions($sql_param, $where_param){

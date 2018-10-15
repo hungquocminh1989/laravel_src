@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contracts\Repositories\CategoryRepository;
 
-class Category extends Controller
+class CategoryController extends Controller
 {
     protected $_categoryRepository;
 
@@ -15,7 +15,7 @@ class Category extends Controller
     }
     
     public function index(){
-		$data_all = $this->_categoryRepository->selectAllRows();
-		dump($data_all);
+    	$this->_categoryRepository->getCategoryCustome();
+		//dump($data_all);
 	}
 }

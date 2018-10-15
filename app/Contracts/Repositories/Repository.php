@@ -4,6 +4,12 @@ namespace App\Contracts\Repositories;
 interface Repository
 {
 	
+	/*public function beginTransaction();
+	
+	public function rollBack();
+	
+	public function commit();*/
+	
 	public function selectRowById($id);
 	
     public function selectAllRows();
