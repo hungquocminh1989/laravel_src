@@ -13,8 +13,12 @@ class CreateSitePagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_site_pages', function (Blueprint $table) {
-            $table->increments('m_site_pages_id');
+        Schema::create('m_site_page', function (Blueprint $table) {
+            $table->increments('m_site_page_id');
+            $table->text('page_name');
+            $table->text('page_link');
+            $table->integer('page_type');
+            $table->integer('sort_no');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateSitePagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_site_pages');
+        Schema::dropIfExists('m_site_page');
     }
 }

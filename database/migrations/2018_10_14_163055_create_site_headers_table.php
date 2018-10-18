@@ -13,8 +13,13 @@ class CreateSiteHeadersTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_site_headers', function (Blueprint $table) {
-            $table->increments('m_site_headers_id');
+        Schema::create('m_site_header', function (Blueprint $table) {
+            $table->increments('m_site_header_id');
+            $table->text('header_name');
+            $table->integer('display_flg');
+            $table->integer('sort_no');
+            $table->integer('m_site_page_id');
+            $table->integer('home_flg');
             $table->timestamps();
         });
     }
@@ -26,6 +31,6 @@ class CreateSiteHeadersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_site_headers');
+        Schema::dropIfExists('m_site_header');
     }
 }

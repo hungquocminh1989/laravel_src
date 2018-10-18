@@ -13,8 +13,11 @@ class CreateSystemBackupsTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_system_backups', function (Blueprint $table) {
-            $table->increments('m_system_backups_id');
+        Schema::create('m_system_backup', function (Blueprint $table) {
+            $table->increments('m_system_backup_id');
+            $table->text('system_backup_name');
+            $table->text('database_path');
+            $table->text('datafiles_path');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateSystemBackupsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_system_backups');
+        Schema::dropIfExists('m_system_backup');
     }
 }

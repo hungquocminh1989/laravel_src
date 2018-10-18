@@ -13,8 +13,12 @@ class CreateDefinesTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_defines', function (Blueprint $table) {
-            $table->increments('m_defines_id');
+        Schema::create('m_define', function (Blueprint $table) {
+            $table->increments('m_define_id');
+            $table->integer('define_key');
+            $table->text('define_value');
+            $table->text('display_value');
+            $table->integer('sort_no');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateDefinesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_defines');
+        Schema::dropIfExists('m_define');
     }
 }

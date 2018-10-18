@@ -13,8 +13,11 @@ class CreateCategorySectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_category_sections', function (Blueprint $table) {
-            $table->increments('m_category_sections_id');
+        Schema::create('m_category_section', function (Blueprint $table) {
+            $table->increments('m_category_section_id');
+            $table->integer('m_site_page_section_id');
+            $table->integer('m_category_id');
+            $table->integer('m_site_page_id');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateCategorySectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_category_sections');
+        Schema::dropIfExists('m_category_section');
     }
 }

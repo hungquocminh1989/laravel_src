@@ -13,8 +13,11 @@ class CreateHtmlSectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_html_sections', function (Blueprint $table) {
-            $table->increments('m_html_sections_id');
+        Schema::create('m_html_section', function (Blueprint $table) {
+            $table->increments('m_html_section_id');
+            $table->integer('m_site_page_id');
+            $table->integer('m_site_page_section_id');
+            $table->integer('m_html_data_id');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateHtmlSectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_html_sections');
+        Schema::dropIfExists('m_html_section');
     }
 }

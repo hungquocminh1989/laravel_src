@@ -13,8 +13,11 @@ class CreateSiteSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_site_settings', function (Blueprint $table) {
-            $table->increments('m_site_settings_id');
+        Schema::create('m_site_setting', function (Blueprint $table) {
+            $table->increments('m_site_setting_id');
+            $table->text('site_name');
+            $table->text('phone');
+            $table->text('address');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateSiteSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_site_settings');
+        Schema::dropIfExists('m_site_setting');
     }
 }

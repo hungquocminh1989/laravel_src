@@ -13,8 +13,12 @@ class CreateSitePageSectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_site_page_sections', function (Blueprint $table) {
-            $table->increments('m_site_page_sections_id');
+        Schema::create('m_site_page_section', function (Blueprint $table) {
+            $table->increments('m_site_page_section_id');
+            $table->integer('m_site_page_id');
+            $table->text('section_title');
+            $table->integer('section_type');
+            $table->integer('sort_no');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateSitePageSectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_site_page_sections');
+        Schema::dropIfExists('m_site_page_section');
     }
 }

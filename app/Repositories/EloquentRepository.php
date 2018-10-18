@@ -43,7 +43,7 @@ abstract class EloquentRepository implements Repository
 	}
     
     public function selectRowsByConditions($param = array()){
-		
+		return $this->_model->where($param)->get();
 	}
     
     public function insertRow($sql_param){
@@ -71,7 +71,14 @@ abstract class EloquentRepository implements Repository
 	}
     
     public function updateRowsByConditions($sql_param, $where_param){
-		
+		$rows = $this->_model->where($where_param)->get();
+		foreach($rows as $row){
+			foreach($sql_param as $key => $value){
+				$row->{$key} = $value;
+			}
+			return $row->save();
+		}
+		return TRUE;
 	}
     
     public function deleteRowById($id){
@@ -80,7 +87,11 @@ abstract class EloquentRepository implements Repository
 	}
     
     public function deleteRowsByConditions($param){
-		
+		$rows = $this->_model->where($param)->get();
+		foreach($rows as $row){
+			$row->delete();
+		}
+		return TRUE;
 	}
     
     public function truncateTable(){

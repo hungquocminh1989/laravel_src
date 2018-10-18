@@ -13,8 +13,11 @@ class CreateProductSectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_product_sections', function (Blueprint $table) {
-            $table->increments('m_product_sections_id');
+        Schema::create('m_product_section', function (Blueprint $table) {
+            $table->increments('m_product_section_id');
+            $table->integer('m_site_page_section_id');
+            $table->integer('m_product_id');
+            $table->integer('m_site_page_id');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateProductSectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_product_sections');
+        Schema::dropIfExists('m_product_section');
     }
 }

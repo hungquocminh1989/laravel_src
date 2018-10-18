@@ -13,8 +13,11 @@ class CreateHtmlDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('m_html_datas', function (Blueprint $table) {
-            $table->increments('m_html_datas_id');
+        Schema::create('m_html_data', function (Blueprint $table) {
+            $table->increments('m_html_data_id');
+            $table->text('html_name');
+            $table->text('html_data');
+            $table->integer('sort_no');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateHtmlDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('m_html_datas');
+        Schema::dropIfExists('m_html_data');
     }
 }
