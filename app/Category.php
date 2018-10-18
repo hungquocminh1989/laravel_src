@@ -6,27 +6,26 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    protected $table = 'm_categorys';
+    protected $table = 'm_category';
     
-    protected $primaryKey = 'm_categorys_id';
+    protected $primaryKey = 'm_category_id';
     
     public $timestamps = true;
     
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'm_category_id', 'category_name', 'sort_no',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
+    //protected $dateFormat = 'U';
     
+    //Column enable update with function fill(), create()
+    protected $fillable = [
+        'sort_no'
+    ];
+    
+    //Column can not update with function fill(), create()
+    protected $guarded = [
+        //'m_category_id','category_name'
+    ];
+    
+    //Column hidden
+    protected $hidden = [
+    	//'category_name'
     ];
 }
