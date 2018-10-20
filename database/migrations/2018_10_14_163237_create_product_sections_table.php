@@ -18,6 +18,7 @@ class CreateProductSectionsTable extends Migration
             $table->integer('m_site_page_section_id');
             $table->integer('m_product_id');
             $table->integer('m_site_page_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

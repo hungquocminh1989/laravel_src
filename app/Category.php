@@ -3,29 +3,34 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Category extends Model
 {
+	use SoftDeletes;
+	
     protected $table = 'm_category';
     
     protected $primaryKey = 'm_category_id';
+
+	//protected $dates = ['deleted_at'];
     
     public $timestamps = true;
     
     //protected $dateFormat = 'U';
     
     //Column enable update with function fill(), create()
-    /*protected $fillable = [
-        '*'
-    ];*/
+    protected $fillable = [
+        
+    ];
     
     //Column can not update with function fill(), create()
     protected $guarded = [
-        //'m_category_id','category_name'
+        
     ];
     
     //Column hidden
     protected $hidden = [
-    	//'category_name'
+    	
     ];
 }

@@ -20,6 +20,7 @@ class CreateSiteHeadersTable extends Migration
             $table->integer('sort_no');
             $table->integer('m_site_page_id');
             $table->integer('home_flg');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

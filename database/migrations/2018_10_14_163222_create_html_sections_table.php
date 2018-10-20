@@ -18,6 +18,7 @@ class CreateHtmlSectionsTable extends Migration
             $table->integer('m_site_page_id');
             $table->integer('m_site_page_section_id');
             $table->integer('m_html_data_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

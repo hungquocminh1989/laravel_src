@@ -19,6 +19,7 @@ class CreateDefinesTable extends Migration
             $table->text('define_value');
             $table->text('display_value');
             $table->integer('sort_no');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

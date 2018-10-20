@@ -18,6 +18,7 @@ class CreateSystemBackupsTable extends Migration
             $table->text('system_backup_name');
             $table->text('database_path');
             $table->text('datafiles_path');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -19,6 +19,7 @@ class CreateSitePageSectionsTable extends Migration
             $table->text('section_title');
             $table->integer('section_type');
             $table->integer('sort_no');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

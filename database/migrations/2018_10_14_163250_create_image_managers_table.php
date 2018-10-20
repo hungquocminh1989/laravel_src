@@ -20,6 +20,7 @@ class CreateImageManagersTable extends Migration
             $table->integer('m_category_id');
             $table->integer('m_product_id');
             $table->integer('m_site_setting_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

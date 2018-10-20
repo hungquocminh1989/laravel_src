@@ -18,6 +18,7 @@ class CreateSiteSettingsTable extends Migration
             $table->text('site_name');
             $table->text('phone');
             $table->text('address');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

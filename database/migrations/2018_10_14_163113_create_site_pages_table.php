@@ -19,6 +19,7 @@ class CreateSitePagesTable extends Migration
             $table->text('page_link');
             $table->integer('page_type');
             $table->integer('sort_no');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

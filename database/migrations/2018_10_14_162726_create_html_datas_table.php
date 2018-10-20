@@ -18,6 +18,7 @@ class CreateHtmlDatasTable extends Migration
             $table->text('html_name');
             $table->text('html_data');
             $table->integer('sort_no');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

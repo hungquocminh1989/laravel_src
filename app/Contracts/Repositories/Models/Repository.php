@@ -10,44 +10,46 @@ interface Repository
 	
 	public function commit();*/
 	
-	/*public function all($cols = ['*']);
+	public function repoGetAll();
+    
+    public function repoFind($id);
+    
+    public function repoFindWithAnd($arrAnd);
+    
+    public function repoFindWithOr($arrOr);
+    
+    public function repoCreate($arrData);
 	
-	public function find($id, $cols = ['*']);
+	public function repoCreateOne($arrData);
+    
+    public function repoUpdateWithAnd($arrAnd, $arrData);
+    
+    public function repoUpdateWithOr($arrOr, $arrData);
 	
-	public function create(array $arr_data);
+	public function repoUpdateWithId($id, $arrData);
 	
-	public function update($id, array $arr_data);
+	public function repoUpsert($arrSearch, $arrValue);
 	
-	public function delete($id);
+	public function repoDeleteWithAnd($arrAnd);
 	
-	public function deleteAll();*/
+	public function repoDeleteWithOr($arrOr);
 	
-	//======================
+	public function repoDeleteOne($id);
 	
-	public function selectRowById($id);
+	public function repoRestore();
 	
-    public function selectAllRows();
+	public function repoRestoreWithAnd($arrAnd);
+	
+	public function repoRestoreWithOr($arrOr);
+	
+	public function repoRestoreWithId($id);
     
-    public function selectRowsByConditions($param = array());
+    public function repoTruncate();
     
-    public function insertRow($sql_param);
+    public function repoGenerateSortNo($tablename);
     
-    public function insertRows($sql_params);
+    public function repoUpdateSortNo($tablename, $arr_sort_list);
     
-    public function updateRowById($sql_param, $id);
-    
-    public function updateRowsByConditions($sql_param, $where_param);
-    
-    public function deleteRowById($id);
-    
-    public function deleteRowsByConditions($param);
-    
-    public function truncateTable();
-    
-    public function generateSortNo($tablename);
-    
-    public function updateSortNo($tablename, $arr_sort_list);
-    
-    public function upsertRow($sql_param, $id = 'null', $table_name = NULL);
+    public function repoUpsertRow($sql_param, $id = 'null', $table_name = NULL);
     
 }

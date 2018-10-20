@@ -18,6 +18,7 @@ class CreateCategorySectionsTable extends Migration
             $table->integer('m_site_page_section_id');
             $table->integer('m_category_id');
             $table->integer('m_site_page_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

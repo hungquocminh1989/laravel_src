@@ -24,6 +24,7 @@ class CreateProductsTable extends Migration
             $table->text('msg_notify');
             $table->integer('flg_notify');
             $table->integer('sort_no');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
