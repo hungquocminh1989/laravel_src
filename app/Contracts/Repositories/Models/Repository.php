@@ -1,5 +1,5 @@
 <?php
-namespace App\Contracts\Repositories;
+namespace App\Contracts\Repositories\Models;
 
 interface Repository
 {
@@ -9,6 +9,20 @@ interface Repository
 	public function rollBack();
 	
 	public function commit();*/
+	
+	/*public function all($cols = ['*']);
+	
+	public function find($id, $cols = ['*']);
+	
+	public function create(array $arr_data);
+	
+	public function update($id, array $arr_data);
+	
+	public function delete($id);
+	
+	public function deleteAll();*/
+	
+	//======================
 	
 	public function selectRowById($id);
 	

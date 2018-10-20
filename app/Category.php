@@ -15,9 +15,9 @@ class Category extends Model
     //protected $dateFormat = 'U';
     
     //Column enable update with function fill(), create()
-    protected $fillable = [
-        'sort_no'
-    ];
+    /*protected $fillable = [
+        '*'
+    ];*/
     
     //Column can not update with function fill(), create()
     protected $guarded = [

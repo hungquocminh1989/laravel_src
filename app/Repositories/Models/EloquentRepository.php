@@ -1,7 +1,7 @@
 <?php
-namespace App\Repositories;
+namespace App\Repositories\Models;
 
-use App\Contracts\Repositories\Repository;
+use App\Contracts\Repositories\Models\Repository;
 
 abstract class EloquentRepository implements Repository
 {
@@ -9,6 +9,8 @@ abstract class EloquentRepository implements Repository
      * @var \Illuminate\Database\Eloquent\Model
      */
     protected $_model;
+    
+    protected $_result;
 
     /**
      * EloquentRepository constructor.
@@ -34,8 +36,27 @@ abstract class EloquentRepository implements Repository
         );
     }
     
+    public function all($id)
+    {
+        return $this->_model->all();
+    }
+    
+    public function find($id)
+    {
+        return $this->_model->findOrFail($id);
+    }
+    
+    public function create(array $arr_data){
+		foreach($arr_data as $row){
+			$this->_model->create($row);
+		}
+		return TRUE;
+	}
+    
+    //================
+    
     public function selectRowById($id){
-		return $this->_model->find($id);
+        return $this->_model->find($id);
 	}
 	
     public function selectAllRows(){

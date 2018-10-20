@@ -41,8 +41,8 @@ class AppServiceProvider extends ServiceProvider
 			| use App\Contracts\Repositories\CategoryRepository;
 			|
 			*/
-        	\App\Contracts\Repositories\CategoryRepository::class,
-	        \App\Repositories\CategoryRepository::class
+        	\App\Contracts\Repositories\Models\CategoryRepository::class,
+	        \App\Repositories\Models\CategoryRepository::class
 	        
 	    );
         

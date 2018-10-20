@@ -1,8 +1,8 @@
 <?php
-namespace App\Repositories;
+namespace App\Repositories\Models;
 
-use App\Repositories\EloquentRepository;
-use App\Contracts\Repositories\CategoryRepository as CategoryRepositoryInterface;
+use App\Repositories\Models\EloquentRepository;
+use App\Contracts\Repositories\Models\CategoryRepository as CategoryRepositoryInterface;
 
 class CategoryRepository extends EloquentRepository implements CategoryRepositoryInterface
 {
@@ -24,5 +24,6 @@ class CategoryRepository extends EloquentRepository implements CategoryRepositor
             ->first();
 
         return $result;*/
+        
     }
 }
