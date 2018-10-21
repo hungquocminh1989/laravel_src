@@ -29,5 +29,23 @@ return [
     */
 
     'compiled' => realpath(storage_path('framework/views')),
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Controller Resource View
+    |--------------------------------------------------------------------------
+    */
+    'category' => [
+    	'index'=>'pages.category.index',
+    	'create'=>'pages.category.create',
+    	'show'=>'pages.category.show',
+    	'edit'=>'pages.category.edit',
+    ],
+    'product' => [
+    	'index'=>'pages.product.index',
+    	'create'=>'pages.product.create',
+    	'show'=>'pages.product.show',
+    	'edit'=>'pages.product.edit',
+    ],
 
 ];

@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Contracts\Repositories\Models\CategoryRepository;
+use App\Contracts\Repositories\Models\ProductRepository;
 use App;
 use Config;
 
-class CategoryController extends Controller
+class ProductController extends Controller
 {
     protected $_repo;
 
-    public function __construct(CategoryRepository $repo)
+    public function __construct(ProductRepository $repo)
     {
-        $this->_repo = App::make(CategoryRepository::class);
+        $this->_repo = $repo;
     }
     
     /**
@@ -23,9 +23,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $a = $this->_repo->getCategoryCustome();
-        //dump(Config::get('define.category.index'));
-        return view(Config::get('view.category.index'));
+        
+        return view(Config::get('view.product.index'));
     }
 
     /**
@@ -36,7 +35,7 @@ class CategoryController extends Controller
     public function create()
     {
         
-        return view(Config::get('view.category.create'));
+        return view(Config::get('view.product.create'));
     }
 
     /**
@@ -59,7 +58,7 @@ class CategoryController extends Controller
     public function show($id)
     {
         
-        return view(Config::get('view.category.show'));
+        return view(Config::get('view.product.show'));
     }
 
     /**
@@ -71,7 +70,7 @@ class CategoryController extends Controller
     public function edit($id)
     {
         
-        return view(Config::get('view.category.edit'));
+        return view(Config::get('view.product.edit'));
     }
 
     /**
