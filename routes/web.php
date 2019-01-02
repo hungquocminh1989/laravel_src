@@ -20,8 +20,18 @@ Route::get('/', function () {
 Debugbar::error('Error!');
 Debugbar::warning('Watch out…');
 Debugbar::addMessage('Another message', 'mylabel');
+	App::setLocale('vi');
+	//echo trans('common.popup_button_close');
+    return view('index');
+});
+
+Route::post('/test', function () {
+	$a = [];
+	$a['a'] = '11';
+	$a['b'] = '22';
+	$a['c'] = '33';
 	
-    return view('welcome');
+    return response()->json($a);
 });
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

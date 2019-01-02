@@ -30,5 +30,18 @@
 {{-- Add at <body> --}}
 @section('include_script')
 	@parent
-
+	@include('core-ajax.system')
+	<script>
+		$(function() {
+			var ajax = new System();
+			ajax.done_func = function(html) {
+    			System.message_success('Test.');
+    			console.log(html);
+	    	};
+	    	ajax.connect("POST","/test",{
+	            		"m_category_id": 11111  
+		    });
+			
+		});
+	</script>
 @endsection
