@@ -31,7 +31,10 @@ Route::post('/test', function () {
 	$a['b'] = '22';
 	$a['c'] = '33';
 	
-    return response()->json($a);
+	$returnHTML = view('response.test')->with('userjobs', $a)->render();
+	return response()->json(array('success' => true, 'html'=>$returnHTML));
+	
+    //return response()->json($a);
 });
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

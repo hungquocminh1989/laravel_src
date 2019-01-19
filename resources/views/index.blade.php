@@ -18,7 +18,7 @@
 {{-- Add at <main> --}}
 @section('main_content')
 	@parent
-	
+	<div id="testabc"></div>
 @endsection
 
 {{-- Add at <footer> --}}
@@ -34,13 +34,16 @@
 	<script>
 		$(function() {
 			var ajax = new System();
-			ajax.done_func = function(html) {
-    			System.message_success('Test.');
-    			console.log(html);
+			ajax.done_func = function(response) {
+    			System.message_success('Test.',function(){
+    				$('#testabc').html(response.html);
+    				$('#testabc').css('background-color','yellow');
+    			});
+    			//console.log(html);
 	    	};
 	    	ajax.connect("POST","/test",{
 	            		"m_category_id": 11111  
-		    });
+		    },false);
 			
 		});
 	</script>
