@@ -4,15 +4,15 @@
 <link href="{{ asset('/librarys/bootstrap3-dialog/css/bootstrap-dialog.css') }}" rel="stylesheet"/>
 <script src="{{ asset('/librarys/bootstrap3-dialog/js/bootstrap-dialog.js') }}"></script>
 <script type="text/javascript">
-    function System() {
+    function AjaxRequest() {
         this.initialize.apply(this, arguments);
     }
     
-    function SystemUpload() {
+    function UploadRequest() {
         this.initialize.apply(this, arguments);
     }
     
-    SystemUpload.prototype.initialize = function(data_type) {
+    UploadRequest.prototype.initialize = function(data_type) {
         this.ajax_option = {
     		cache: false,
     		method: data_type,
@@ -25,18 +25,18 @@
     			401 : function () {
     				//Edit start LIXD-614 TinVNIT 12022016
     				//$('#modal_message').dialog('close');
-    				//System.sesstion_err_msg();
+    				//AjaxRequest.sesstion_err_msg();
     				//Edit end LIXD-614 TinVNIT 12022016
     			}
     		}
     	};
     };
     
-    SystemUpload.prototype.connect = function (action_type, ajax_url, ajax_data, loaderDisplay = true) {
+    UploadRequest.prototype.connect = function (action_type, ajax_url, ajax_data, loaderDisplay = true) {
     	var aa_this = this;
     	var opt =　this.ajax_option;
     	if(loaderDisplay == true){
-			System.loading(true);	
+			AjaxRequest.loading(true);	
 		}
     	opt.type =  action_type;
     	opt.url = "{{url('/')}}" + ajax_url;
@@ -47,25 +47,25 @@
     	}
     	$.ajax(opt)
     		.always(function (data) {
-    			System.loading(false);
+    			AjaxRequest.loading(false);
     			aa_this.always_func(data);
     		})	// alwaysを一番先に実行
     		.done(aa_this.done_func)
     		.fail(aa_this.fail_func);
     };
     
-    SystemUpload.prototype.always_func = function (data){
+    UploadRequest.prototype.always_func = function (data){
     	//Do Nothing.
     };
-    SystemUpload.prototype.done_func = function (data){
+    UploadRequest.prototype.done_func = function (data){
     	
     };
-    SystemUpload.prototype.fail_func = function (data) {
-    	System.message_error(data.responseText);
+    UploadRequest.prototype.fail_func = function (data) {
+    	AjaxRequest.message_error(data.responseText);
     };
     
     
-    System.prototype.initialize = function(data_type) {
+    AjaxRequest.prototype.initialize = function(data_type) {
         this.ajax_option = {
     		cache: false,
     		method: data_type,
@@ -76,28 +76,28 @@
     			401 : function () {
     				//Edit start LIXD-614 TinVNIT 12022016
     				//$('#modal_message').dialog('close');
-    				//System.sesstion_err_msg();
+    				//AjaxRequest.sesstion_err_msg();
     				//Edit end LIXD-614 TinVNIT 12022016
     			}
     		}
     	};
     };
     
-    System.prototype.always_func = function (data){
+    AjaxRequest.prototype.always_func = function (data){
     	//Do Nothing.
     };
-    System.prototype.done_func = function (data){
-    	//System.message_success('Thuc hien thanh cong');
+    AjaxRequest.prototype.done_func = function (data){
+    	//AjaxRequest.message_success('Thuc hien thanh cong');
     };
-    System.prototype.fail_func = function (data) {
-    	System.message_error(data.responseText);
+    AjaxRequest.prototype.fail_func = function (data) {
+    	AjaxRequest.message_error(data.responseText);
     };
     
-    System.prototype.connect = function (action_type, ajax_url, ajax_data, loaderDisplay = true) {
+    AjaxRequest.prototype.connect = function (action_type, ajax_url, ajax_data, loaderDisplay = true) {
     	var aa_this = this;
     	var opt =　this.ajax_option;
     	if(loaderDisplay == true){
-			System.loading(true);	
+			AjaxRequest.loading(true);	
 		}
     	opt.type =  action_type;
     	opt.url = "{{url('/')}}" + ajax_url;
@@ -108,7 +108,7 @@
     	}
     	$.ajax(opt)
     		.always(function (data) {
-    			System.loading(false);
+    			AjaxRequest.loading(false);
     			aa_this.always_func(data);
     		})	// alwaysを一番先に実行
     		.done(aa_this.done_func)
@@ -117,7 +117,7 @@
     
     
     
-    System.get_form_data = function (form_id, type = false) {
+    AjaxRequest.get_form_data = function (form_id, type = false) {
 		var sArr = $("#"+form_id).serializeArray();
 		if(type == false){
 			
@@ -141,7 +141,7 @@
 	    
     };
 	
-	System.show_dialog = function (content,titlte = '',exec_func , ok_func) {
+	AjaxRequest.show_dialog = function (content,titlte = '',exec_func , ok_func) {
 		//http://nakupanda.github.io/bootstrap3-dialog/
 		BootstrapDialog.show({
 			title: titlte,
@@ -168,7 +168,7 @@
         });
     };
     
-    System.message_success = function (msg,ok_func) {
+    AjaxRequest.message_success = function (msg,ok_func) {
     	//http://nakupanda.github.io/bootstrap3-dialog/
 		BootstrapDialog.show({
             title: "{{trans('common.popup_title_success')}}",
@@ -190,7 +190,7 @@
         });
     };
     
-    System.message_confirm = function (msg, ok_func, cancel_func) {
+    AjaxRequest.message_confirm = function (msg, ok_func, cancel_func) {
     	//http://nakupanda.github.io/bootstrap3-dialog/
 		BootstrapDialog.show({
             title: "{{trans('common.popup_title_confirm')}}",
@@ -220,7 +220,7 @@
         });
     };
     
-    System.message_error = function (msg,ok_func) {
+    AjaxRequest.message_error = function (msg,ok_func) {
     	//http://nakupanda.github.io/bootstrap3-dialog/
     	BootstrapDialog.show({
             title: "{{trans('common.popup_title_error')}}",
@@ -243,13 +243,13 @@
     };
     
     //Reload Page
-    System.reload = function () {
-    	System.loading(true);
+    AjaxRequest.reload = function () {
+    	AjaxRequest.loading(true);
 		location.reload();
     };
     
     /*$(document).on('click', '[type="submit"]', function() {
-    	System.message_confirm('Thực Hiện Xử Lý Này ?',
+    	AjaxRequest.message_confirm('Thực Hiện Xử Lý Này ?',
     		function(){
     			return true;
 			}
@@ -259,10 +259,10 @@
     
     //Lock screen when submit
     $(document).on('submit', 'form', function() {
-    	//System.loading(true);
+    	//AjaxRequest.loading(true);
     });
     
-    System.loading = function (flag) {
+    AjaxRequest.loading = function (flag) {
     	if (flag) {
     		$("#loading_screen").show();
     	} else {
