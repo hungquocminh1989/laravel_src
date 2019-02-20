@@ -35,7 +35,7 @@
 		$(function() {
 			var ajax = new AjaxRequest();
 			ajax.done_func = function(response) {
-    			System.message_success('Test.',function(){
+    			AjaxRequest.message_success('Test.',function(){
     				$('#testabc').html(response.html);
     				$('#testabc').css('background-color','yellow');
     			});
