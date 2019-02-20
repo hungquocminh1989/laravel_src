@@ -30,10 +30,10 @@
 {{-- Add at <body> --}}
 @section('include_script')
 	@parent
-	@include('core-ajax.system')
+	@include('core-ajax.ajax-request')
 	<script>
 		$(function() {
-			var ajax = new System();
+			var ajax = new AjaxRequest();
 			ajax.done_func = function(response) {
     			System.message_success('Test.',function(){
     				$('#testabc').html(response.html);
